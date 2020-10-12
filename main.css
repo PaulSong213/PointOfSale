@@ -1,0 +1,244 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 09 26, 20, 2:55:34 PM
+    Author     : Songalia
+*/
+
+body {
+    font-family: 'Rasa', 'David Libre', Agency FB, serif;
+    font-weight: 300;
+    background-color: #EFF0F5; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Barlow Condensed', 'David Libre', Arial, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.button {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.pricing img {
+    width: 100%;
+ }
+ 
+ .best-seller {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+     grid-template-rows: auto;
+     grid-grap: 1.5rem;
+     grid-template-areas:
+         'img-1 img-2 img-3 img-3'
+         'img-1 img-5 img-5 img-6'
+ }
+ 
+ .best-seller a{
+     width: 100%;
+     height: 25rem;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     position: relative;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     text-decoration: none;
+ }
+ 
+ .best-seller a ion-icon{
+     color: rgba(255,255,255,0.6);
+     font-size: 1.5rem;
+     position: relative;
+     z-index: 100;
+     padding: 0.5rem 1.5rem;
+     border: 2px solid rgba(255,255,255,0.8);
+     border-radius: 0.4rem;
+     opacity: 0;
+     transition: opacity 0.5s;
+ }
+ 
+ .best-seller a:before {
+     opacity: 0;
+     content: '';
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     top: 0;
+     left: 0;
+     background-color: rgba(0,0,0,0.8);
+     transition: opacity 0.5s;
+ }
+ 
+ .seller-1 {
+     grid-area: img-1; /* grid name*/
+     min-height: 51.5rem;
+     background-image: url("images/seller1.jpg");
+ }
+ 
+ .seller-2 {
+     grid-area: img-2; /* grid name*/
+     background-image: url("images/seller2.jpg");
+ }
+ 
+ .seller-3 {
+     grid-area: img-3; /* grid name*/
+     background-image: url("images/seller3.jpg");
+ }
+ 
+ .seller-4 {
+     grid-area: img-4; /* grid name*/
+     background-image: url("images/seller4.jpg");
+ }
+ 
+ .seller-5 {
+     grid-area: img-5; /* grid name*/
+     background-image: url("images/seller5.jpg");
+ }
+ 
+ .seller-6 {
+     grid-area: img-6; /* grid name*/
+     background-image: url("images/seller6.jpg");
+ }
+ 
+ .seller-7 {
+     grid-area: img-7; /* grid name*/
+     background-image: url("images/seller7.jpg");
+ }
+ 
+ .seller-8 {
+     grid-area: img-8; /* grid name*/
+     background-image: url("images/seller8.jpg");
+ }
+ 
+ .best-seller a:hover ion-icon,
+ .best-seller a:hover:before{
+     opacity: 1;
+ }
+
+ .mapouter{
+      position:relative;
+      text-align:center;
+      margin: auto auto;
+      max-width: 612px;
+      height: auto;
+  }
+  
+  
+  .gmap_canvas {
+      overflow:hidden;
+      background:none!important;
+      border: rgba(0,0,0,0.5) solid 1px;
+      box-shadow: 3px 3px 10px 3px #888888;
+      height: auto;
+      max-width: 612px;
+  }
+ 
+ .location {
+     margin: 2rem 0;
+ }
+ 
+ .seller-info {
+      text-align: center;
+      margin: 0 auto;
+      background-color: #ffffff;
+      padding: 1rem 1rem;
+      border: rgba(0,0,0,0.5) solid 1px;
+      box-shadow: 3px 3px 10px 3px #888888;
+      margin-top: 1rem;
+      width: fit-content;
+      max-width: 612px;
+}
+
+.seller-info h6 {
+    color: #025928;
+}
+
+ h4 {
+     text-align: center;
+     margin: 1rem auto;
+ }
+ 
+ .order {
+     position: relative;
+     left: 50%;
+     transform: translateX(-50%);
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin: 1rem 0;
+     max-width: 612px;
+ }
+ 
+ .order-card {
+     display: flex;
+     flex-flow: column;
+     border: rgba(0,0,0,0.5) solid 1px;
+     box-shadow: 3px 3px 10px 3px #888888;
+     
+     
+ }
+ .order-card img{
+     border: none;
+     box-shadow: none;
+     width: 100%;
+     height: auto;
+ }
+ 
+ .order-card a {
+     margin: 0.5rem 0;
+     padding: 0rem 1rem;
+     width: fit-content;
+ }
+ .order-card p {
+     padding: 0rem 1rem;
+ }
+ 
+ .centered-container {
+     display: flex;
+     flex-flow: column;
+     overflow: hidden;
+ }
+ 
+ @media screen and (max-width: 900px){
+ .best-seller {
+    grid-template-areas:
+         'img-1 img-1 img-2 img-2'
+         'img-1 img-1 img-3 img-3'
+         'img-5 img-5 img-5 img-6'
+ }
+ .best-seller a{
+    height: 20rem;
+ }
+ 
+ .seller-1 {
+    min-height: 41.5rem;
+ }
+ }
+ 
+  @media screen and (max-width: 600px){
+     .best-seller {
+     grid-template-areas:
+         'img-1 img-1 img-1 img-1'
+         'img-2 img-2 img-2 img-2'
+         'img-3 img-3 img-3 img-3'
+         'img-5 img-5 img-5 img-5'
+         'img-6 img-6 img-6 img-6';
+ }
+ .seller-2 {
+     min-height: 41.5rem;
+     }
+ }
+ 
+ @media only screen and (min-width: 768px) {
+  
+}

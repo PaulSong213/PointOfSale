@@ -1,0 +1,204 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 10 5, 20, 4:21:41 PM
+    Author     : Songalia
+*/
+
+
+
+html { 
+    scroll-behavior: smooth; 
+} 
+
+ body {
+     background-color: #EFF0F5;
+ }
+ 
+ .row {
+     max-height: 300px;
+    
+ }
+ .sidebar {
+     background-color: rgba(255,255,255,1);
+     margin: 0;
+     padding: 2rem 0.5rem;
+     display: flex;
+     flex-flow: row;
+     border-radius: 0.5rem 0.5rem 0rem 0rem;
+     border: 1px rgba(0,0,0,0.2) solid;
+ }
+ 
+ .list-nav {
+     padding: 0;
+     width: 100%;
+     height: 100%;
+     display: flex;
+     flex-flow: row;
+     list-style-type:none;
+     align-items: center;
+ }
+ 
+ .list-nav a {
+     text-decoration: none;
+     padding: 0rem 1rem;
+     width: 100%;
+     text-align: center;
+     position: relative;
+     top:10%;
+     color: rgba(255,255,255,0.8);
+     font-size: 1rem;
+ }
+ 
+ .list-nav li {
+    text-align: center;
+    margin: 0.2rem 0.2rem;
+    background-color: #17A2B8;
+    border-radius: 0.3rem;
+    width: fit-content;
+    height: 90%;
+    display: flex;
+    border: 1px #ffffff solid;
+ }
+ 
+ 
+ 
+ .list-nav li:hover {
+      background-color: #007BFF; 
+ }
+ 
+ .main-content{
+     background-color: #ffffff;
+     padding: 1rem 1rem;
+     border-radius: 0rem 0rem 0.5rem 0.5rem;
+     border: 1px rgba(0,0,0,0.2) solid;
+     overflow: auto;
+     max-height: 450px;
+     min-height: 450px;
+ }
+ 
+ .main-content h5{
+     color: white;
+ }
+ 
+ .table-top {
+    border-radius: 0.5rem;
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    transition: 650ms;
+    align-items: center;
+ }
+ 
+
+ 
+ .search-form input[type=text] {
+     padding: 0;
+     outline: none;
+     border: none;
+     color: #ffffff;
+     font-size: 1rem;
+     transition:  1s;
+     width: 150px;
+     border-bottom: #00ccff 1px solid;
+   }
+   
+   .search-form input[type=text]::placeholder {
+       color: rgba(255,255,255,0.5);
+   }
+   
+   .search-form input[type=text]:focus {
+     border-bottom: rgba(255,255,255,0.5) 2px solid;
+    }
+   
+    .search-form  button {
+     border: none;
+     padding: 0;
+     color: #ffffff;
+     font-size: 1.2rem;
+     margin-bottom: -0.2rem;
+   }
+
+    .container-seller {
+         padding: 0 4vw;
+    }
+   
+    td {
+     white-space:nowrap;
+     max-width: 300px;
+     overflow: hidden;
+    }
+    
+    .table-body a{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #007BFF;
+    padding: 0.5rem 0.7rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    }
+
+    .table-body a:hover {
+        background-color: #0066cc;
+    }
+   
+   .change-indicator {
+      margin: 0;
+      width: 100%;
+      background-color: #007BFF;
+      border-radius: 0.5rem;
+      padding: 1rem 1rem;
+      color: #ffffff;
+      display: flex;
+      flex-flow: row;
+      align-items: center;
+      justify-content: space-between;
+      
+  }
+  
+  .change-indicator span {
+      display: flex;
+      flex-flow: row;
+      align-items: center;
+  }
+  
+  .change-indicator ion-icon {
+      font-size: 1.5rem;
+      border-radius: 1rem;
+      transition:  500ms;
+  }
+  
+  .change-indicator ion-icon:hover {
+      background-color: #ffffff;
+      color: red;
+  }
+ @media only screen and (min-width: 768px) {
+    
+   .main-content{
+       border-radius: 0rem 0.5rem 0.5rem 0rem;
+   } 
+   .list-nav {
+       flex-flow: column;
+       align-items: flex-end;
+   }
+   .list-nav li {
+       text-align: center;
+       margin: 0.3rem 0.1rem;                    
+       width: 100%;
+       height: fit-content;
+       padding: 0.3rem 0;
+   }
+   .list-nav a {
+       width: 100%;
+       text-align: center;
+       position: relative;
+       top:5%;
+   }
+   .sidebar {
+       border-radius: 0.5rem 0rem 0rem 0.5rem;
+   }
+}
