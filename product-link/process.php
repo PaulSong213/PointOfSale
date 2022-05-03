@@ -5,7 +5,7 @@
    $dbhost = 'localhost';
    $dbuser = 'root';
    $dbpass = '';
-   $dbName = 'ecom_bili_na_shop'; 
+   $dbName = 'PointOfSale'; 
    date_default_timezone_set('Asia/Manila');
    //edit data in item inventory
    $editItemId = "";
